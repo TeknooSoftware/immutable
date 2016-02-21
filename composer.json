@@ -1,0 +1,38 @@
+{
+    "name": "teknoo/immutable",
+    "type": "library",
+    "description": "Library to create PHP immutable object",
+    "keywords": ["immutable", "object"],
+    "homepage": "http://teknoo.software/immutable",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Richard Déloge",
+            "email": "richarddeloge@gmail.com",
+            "role":"Software architect, Lead developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/TeknooSoftware/immutable/issues",
+        "source": "https://github.com/TeknooSoftware/immutable"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "require":{
+        "php": "~7.0",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Teknoo\\Immutable\\": ["src/"],
+            "Teknoo\\Tests\\Immutable\\": ["tests/"],
+        }
+    },
+    "archive": {
+        "exclude": ["vendor", ".idea"]
+    }
+}
