@@ -26,7 +26,7 @@ use Teknoo\Immutable\Exception\ImmutableException;
 
 /**
  * Interface ImmutableInterface
- * To define immutable objects
+ * To define immutable objects.
  *
  * @copyright   Copyright (c) 2009-2016 Richard Déloge (richarddeloge@gmail.com)
  *
@@ -38,16 +38,20 @@ use Teknoo\Immutable\Exception\ImmutableException;
 interface ImmutableInterface
 {
     /**
-     * To forbid usage of __set
+     * To forbid usage of __set.
+     *
      * @param string $name
-     * @param mixed $value
+     * @param mixed  $value
+     *
      * @throws ImmutableException
      */
     public function __set(string $name, $value);
 
     /**
-     * To forbid usage of __unset
+     * To forbid usage of __unset.
+     *
      * @param string $name
+     *
      * @throws ImmutableException
      */
     public function __unset(string $name);

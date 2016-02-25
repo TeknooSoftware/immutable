@@ -24,7 +24,7 @@ namespace Teknoo\Immutable\Exception;
 
 /**
  * Exception ImmutableException
- * throwed when an immutable object has been updated
+ * thrown when an immutable object has been updated.
  *
  * @copyright   Copyright (c) 2009-2016 Richard Déloge (richarddeloge@gmail.com)
  *
