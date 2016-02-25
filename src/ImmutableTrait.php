@@ -1,9 +1,41 @@
 <?php
 
+/**
+ * Immutable.
+ *
+ * LICENSE
+ *
+ * This source file is subject to the MIT license and the version 3 of the GPL3
+ * license that are bundled with this package in the folder licences
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to contact@uni-alteri.com so we can send you a copy immediately.
+ *
+ *
+ * @copyright   Copyright (c) 2009-2016 Richard Déloge (richarddeloge@gmail.com)
+ *
+ * @link        http://teknoo.software/imuutable Project website
+ *
+ * @license     http://teknoo.software/license/mit         MIT License
+ * @author      Richard Déloge <richarddeloge@gmail.com>
+ */
+
 namespace Teknoo\Immutable;
 
 use Teknoo\Immutable\Exception\ImmutableException;
 
+/**
+ * Trait ImmutableTrait
+ * Default implementation of ImmutableInterface
+ * Implement also a standard constructor to avoid multiple call of this method.
+ *
+ * @copyright   Copyright (c) 2009-2016 Richard Déloge (richarddeloge@gmail.com)
+ *
+ * @link        http://teknoo.software/imuutable Project website
+ *
+ * @license     http://teknoo.software/license/mit         MIT License
+ * @author      Richard Déloge <richarddeloge@gmail.com>
+ */
 trait ImmutableTrait
 {
     /**
@@ -13,9 +45,9 @@ trait ImmutableTrait
 
     /**
      * Method to call in the constructor to avoid multiple call of '__construct'
-     * @return self
+     * @return self|ImmutableInterface
      */
-    protected function uniqueConstructorCheck()
+    protected function uniqueConstructorCheck(): ImmutableInterface
     {
         if (true === $this->isConstructed) {
             throw new ImmutableException('This object is immutable');
@@ -35,21 +67,17 @@ trait ImmutableTrait
     }
 
     /**
-     * To forbid usage of __set
-     * @param string $name
-     * @throws ImmutableException
+     * {@inheritdoc}
      */
-    public function __set($name, $value)
+    public function __set(string $name, $value)
     {
         throw new ImmutableException('This object is immutable');
     }
 
     /**
-     * To forbid usage of __unset
-     * @param string $name
-     * @throws ImmutableException
+     * {@inheritdoc}
      */
-    public function __unset($name)
+    public function __unset(string $name)
     {
         throw new ImmutableException('This object is immutable');
     }

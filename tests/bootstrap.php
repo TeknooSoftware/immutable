@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Immutables.
+ * Immutable.
  *
  * LICENSE
  *
@@ -14,11 +14,12 @@
  *
  * @copyright   Copyright (c) 2009-2016 Richard Déloge (richarddeloge@gmail.com)
  *
- * @link        http://teknoo.software/immutables Project website
+ * @link        http://teknoo.software/imuutable Project website
  *
  * @license     http://teknoo.software/license/mit         MIT License
  * @author      Richard Déloge <richarddeloge@gmail.com>
  */
+
 defined('RUN_CLI_MODE')
     || define('RUN_CLI_MODE', true);
 
