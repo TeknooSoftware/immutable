@@ -19,7 +19,6 @@
  * @license     http://teknoo.software/license/mit         MIT License
  * @author      Richard Déloge <richarddeloge@gmail.com>
  */
-
 namespace Teknoo\Immutable;
 
 use Teknoo\Immutable\Exception\ImmutableException;
@@ -44,7 +43,8 @@ trait ImmutableTrait
     private $isConstructed = false;
 
     /**
-     * Method to call in the constructor to avoid multiple call of '__construct'
+     * Method to call in the constructor to avoid multiple call of '__construct'.
+     *
      * @return self|ImmutableInterface
      */
     protected function uniqueConstructorCheck(): ImmutableInterface
