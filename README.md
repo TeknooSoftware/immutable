@@ -1,9 +1,26 @@
 Teknoo Software - Immutable library
 ================================
 
-
-Welcome and thank you to having downloaded this library.
 This library helps you to create immutable object by prohibiting __set and __unset calls and several call to constructor
+
+Sample example
+--------------
+
+    $a = new class implements Teknoo\Immutable\ImmutableInterface {
+        use Teknoo\Immutable\ImmutableTrait;
+        
+        private $values = ['foo' => 123];
+        
+        public function __get(string $name) 
+        {
+            return $this->values[$name];
+        }
+    }
+    
+    pint $a->foo; //Print 123
+    $a->foo = 'bar'; //Throws an Teknoo\Immutable\Exception\ImmutableException
+    unset($a->foo); //Throws an Teknoo\Immutable\Exception\ImmutableException;
+    $a->__construct(); //Throws an Teknoo\Immutable\Exception\ImmutableException;
 
 Installation & Requirements
 ---------------------------
