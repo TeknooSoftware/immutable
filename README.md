@@ -1,5 +1,7 @@
 Teknoo Software - Immutable library
-================================
+===================================
+
+[![Build Status](https://travis-ci.org/TeknooSoftware/immutable.svg?branch=master)](https://travis-ci.org/TeknooSoftware/immutable) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/9db77f47-ae63-426e-96e9-8dcccf51b08f/mini.png)](https://insight.sensiolabs.com/projects/9db77f47-ae63-426e-96e9-8dcccf51b08f)
 
 This library helps you to create immutable object by prohibiting __set and __unset calls and several call to constructor
 
