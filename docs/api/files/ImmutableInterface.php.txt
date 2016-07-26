@@ -19,11 +19,13 @@
  * @license     http://teknoo.software/license/mit         MIT License
  * @author      Richard Déloge <richarddeloge@gmail.com>
  */
-namespace Teknoo\Immutable\Exception;
+namespace Teknoo\Immutable;
+
+use Teknoo\Immutable\Exception\ImmutableException;
 
 /**
- * Exception ImmutableException
- * thrown when an immutable object has been updated.
+ * Interface ImmutableInterface
+ * To define immutable objects.
  *
  * @copyright   Copyright (c) 2009-2016 Richard Déloge (richarddeloge@gmail.com)
  *
@@ -32,6 +34,25 @@ namespace Teknoo\Immutable\Exception;
  * @license     http://teknoo.software/license/mit         MIT License
  * @author      Richard Déloge <richarddeloge@gmail.com>
  */
-class ImmutableException extends \LogicException
+interface ImmutableInterface
 {
+    /**
+     * To forbid usage of __set.
+     *
+     * @param string $name
+     * @param mixed  $value
+     *
+     * @throws ImmutableException
+     */
+    public function __set(string $name, $value);
+
+    /**
+     * To forbid usage of __unset.
+     *
+     * @param string $name
+     *
+     * @throws ImmutableException
+     */
+    public function __unset(string $name);
 }
+

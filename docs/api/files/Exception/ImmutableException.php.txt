@@ -35,3 +35,4 @@ namespace Teknoo\Immutable\Exception;
 class ImmutableException extends \LogicException
 {
 }
+
