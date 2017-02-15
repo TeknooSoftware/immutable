@@ -1,5 +1,13 @@
 #Teknoo Software - Immutable library - Change Log
 
+###[0.0.2] - 2017-02-15
+###Fix
+- Code style fix
+- License file follow Github specs
+- Add tools to checks QA, use `make qa` and `make test`, `make` to initalize the project, (or `composer update`).
+- Update Travis to use this tool
+- Fix QA Errors
+
 ##[0.0.1] - 2016-07-26
 - First release
 
