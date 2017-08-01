@@ -36,7 +36,7 @@ use Teknoo\Immutable\ImmutableTrait;
  *
  * @covers Teknoo\Immutable\ImmutableTrait
  */
-class ImmutableTraitTest extends \PHPUnit_Framework_TestCase
+class ImmutableTraitTest extends \PHPUnit\Framework\TestCase
 {
     public function buildImmutableInstance()
     {
