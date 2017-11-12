@@ -1,10 +1,14 @@
 #Teknoo Software - Immutable library - Change Log
 
-###[0.0.3] - 2017-08-01
+##[1.0.0] - 2017-11-12
+###Release
+- First stable release, stabilization of the API.
+
+##[0.0.3] - 2017-08-01
 ###Updated
 - Update dev libraries used for this project and use now PHPUnit 6.2 for tests.
 
-###[0.0.2] - 2017-02-15
+##[0.0.2] - 2017-02-15
 ###Fix
 - Code style fix
 - License file follow Github specs
