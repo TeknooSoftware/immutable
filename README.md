@@ -32,7 +32,7 @@ To install this library with composer, run this command :
 
 This library requires :
 
-    * PHP 7+
+    * PHP 7.1+
 
 Credits
 -------
