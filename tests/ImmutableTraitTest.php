@@ -22,6 +22,7 @@
 
 namespace Teknoo\Tests\Immutable;
 
+use Teknoo\Immutable\Exception\ImmutableException;
 use Teknoo\Immutable\ImmutableInterface;
 use Teknoo\Immutable\ImmutableTrait;
 
@@ -45,27 +46,21 @@ class ImmutableTraitTest extends \PHPUnit\Framework\TestCase
         };
     }
 
-    /**
-     * @expectedException \Teknoo\Immutable\Exception\ImmutableException
-     */
     public function testSetException()
     {
+        $this->expectException(ImmutableException::class);
         $this->buildImmutableInstance()->foo = 'bar';
     }
 
-    /**
-     * @expectedException \Teknoo\Immutable\Exception\ImmutableException
-     */
     public function testUnsetException()
     {
+        $this->expectException(ImmutableException::class);
         unset($this->buildImmutableInstance()->foo);
     }
 
-    /**
-     * @expectedException \Teknoo\Immutable\Exception\ImmutableException
-     */
     public function testConstructor()
     {
+        $this->expectException(ImmutableException::class);
         $this->buildImmutableInstance()->__construct();
     }
 }

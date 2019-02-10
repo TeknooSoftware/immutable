@@ -1,6 +1,11 @@
 #Teknoo Software - Immutable library - Change Log
 
-##[1.0.1] - 2018-01-04
+##[1.0.2] - 2019-02-10
+###Release
+- Remove support to PHP 7.1
+- Switch to PHPUnit 8.0
+
+##[1.0.1] - 2019-01-04
 ###Release
 - Remove support to PHP 7.0 and add 7.3
 
