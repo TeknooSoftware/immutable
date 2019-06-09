@@ -1,5 +1,9 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[1.0.3] - 2019-06-09
+###Release
+- Maintenance release, upgrade composer dev requirement and libs
+
 ##[1.0.2] - 2019-02-10
 ###Release
 - Remove support to PHP 7.1
