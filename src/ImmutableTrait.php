@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-/**
+/*
  * Immutable.
  *
  * LICENSE
@@ -40,15 +40,10 @@ use Teknoo\Immutable\Exception\ImmutableException;
  */
 trait ImmutableTrait
 {
-    /**
-     * @var bool
-     */
-    private $isConstructed = false;
+    private bool $isConstructed = false;
 
     /**
      * Method to call in the constructor to avoid multiple call of '__construct'.
-     *
-     * @return self|ImmutableInterface
      */
     protected function uniqueConstructorCheck(): ImmutableInterface
     {
@@ -61,25 +56,16 @@ trait ImmutableTrait
         return $this;
     }
 
-    /**
-     * ImmutableTrait default constructor.
-     */
     public function __construct()
     {
         $this->uniqueConstructorCheck();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function __set(string $name, $value)
     {
         throw new ImmutableException('This object is immutable');
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function __unset(string $name)
     {
         throw new ImmutableException('This object is immutable');
