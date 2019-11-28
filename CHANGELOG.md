@@ -1,5 +1,9 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[2.0.0-beta3] - 2019-11-28
+###Change
+- Enable PHPStan in QA Tools
+
 ##[2.0.0-beta2] - 2019-11-28
 ###Change
 - Most methods have been updated to include type hints where applicable. Please check your extension points to make sure the function signatures are correct.
