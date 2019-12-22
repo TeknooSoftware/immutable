@@ -44,6 +44,7 @@ interface ImmutableInterface
      *
      * @param string $name
      * @param mixed  $value
+     * @return mixed
      *
      * @throws ImmutableException
      */
