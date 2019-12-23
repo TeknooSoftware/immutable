@@ -1,5 +1,9 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[2.0.0-beta5] - 2019-12-23
+###Change
+- Fix Make definition tools
+
 ##[2.0.0-beta4] - 2019-12-23
 ###Change
 - QA Fix spotted by PHPStan

@@ -32,7 +32,7 @@ phpcs:
 phpcpd:
 	vendor/bin/phpcpd src/
 
-.PHONY: qa lint phploc phpmd phpcs phpcpd
+.PHONY: qa lint phploc phpstan phpcs phpcpd
 
 ### Testing
 test:
