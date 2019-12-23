@@ -1,5 +1,9 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[2.0.0-beta4] - 2019-12-23
+###Change
+- QA Fix spotted by PHPStan
+
 ##[2.0.0-beta3] - 2019-11-28
 ###Change
 - Enable PHPStan in QA Tools
