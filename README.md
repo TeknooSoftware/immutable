@@ -24,6 +24,13 @@ Sample example
     unset($a->foo); //Throws an Teknoo\Immutable\Exception\ImmutableException;
     $a->__construct(); //Throws an Teknoo\Immutable\Exception\ImmutableException;
 
+Support this project
+---------------------
+
+This project is free and will remain free, but it is developed on my personal time. 
+If you like it and help me maintain it and evolve it, don't hesitate to support me on [Patreon](https://patreon.com/teknoo_software).
+Thanks :) Richard. 
+
 Installation & Requirements
 ---------------------------
 To install this library with composer, run this command :
@@ -32,7 +39,20 @@ To install this library with composer, run this command :
 
 This library requires :
 
-    * PHP 7.2+
+    * PHP 7.4+
+
+News from Teknoo Immutable 2.0
+----------------------------
+
+This library requires PHP 7.4 or newer. Some changes cause bc breaks :
+
+- PHP 7.4 is the minimum required
+- Most methods have been updated to include type hints where applicable. Please check your extension points to make sure the function signatures are correct.
+- Switch to typed properties
+_ All files use strict typing. Please make sure to not rely on type coercion.
+- Remove some PHP useless DockBlocks
+- Enable PHPStan in QA Tools and disable PHPMd
+
 
 Credits
 -------
