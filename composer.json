@@ -38,6 +38,6 @@
         }
     },
     "archive": {
-        "exclude": ["vendor", ".idea"]
+        "exclude": ["docs", "tests" ,"vendor", ".idea"]
     }
 }
