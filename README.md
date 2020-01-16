@@ -1,7 +1,11 @@
 Teknoo Software - Immutable library
 ===================================
 
-[![Build Status](https://travis-ci.org/TeknooSoftware/immutable.svg?branch=master)](https://travis-ci.org/TeknooSoftware/immutable) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/9db77f47-ae63-426e-96e9-8dcccf51b08f/mini.png)](https://insight.sensiolabs.com/projects/9db77f47-ae63-426e-96e9-8dcccf51b08f)
+[![Build Status](https://travis-ci.com/TeknooSoftware/immutable.svg?branch=master)](https://travis-ci.com/TeknooSoftware/immutable)
+[![Latest Stable Version](https://poser.pugx.org/teknoo/immutable/v/stable)](https://packagist.org/packages/teknoo/immutable)
+[![Total Downloads](https://poser.pugx.org/teknoo/immutable/downloads)](https://packagist.org/packages/teknoo/immutable)
+[![License](https://poser.pugx.org/teknoo/immutable/license)](https://packagist.org/packages/teknoo/immutable)
+[![PHPStan](https://img.shields.io/badge/PHPStan-enabled-brightgreen.svg?style=flat)](https://github.com/phpstan/phpstan)
 
 This library helps you to create immutable object by prohibiting __set and __unset calls and several call to constructor
 
