@@ -21,9 +21,9 @@ Sample example
         {
             return $this->values[$name];
         }
-    }
+    };
     
-    pint $a->foo; //Print 123
+    print $a->foo; //Print 123
     $a->foo = 'bar'; //Throws an Teknoo\Immutable\Exception\ImmutableException
     unset($a->foo); //Throws an Teknoo\Immutable\Exception\ImmutableException;
     $a->__construct(); //Throws an Teknoo\Immutable\Exception\ImmutableException;
