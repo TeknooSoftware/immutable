@@ -27,7 +27,7 @@ phpstan:
 	vendor/bin/phpstan analyse src --level max
 
 phpcs:
-	vendor/bin/phpcs --standard=PSR2 --extensions=php src/
+	vendor/bin/phpcs --standard=PSR12 --extensions=php src/
 
 phpcpd:
 	vendor/bin/phpcpd src/
