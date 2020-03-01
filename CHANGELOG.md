@@ -1,5 +1,11 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[2.0.1] - 2020-03-01
+###Stable Release
+###Changes
+- Update dev tools, migrate to PHPUnit 9.0, phploc 6.0, phpcpd 5.0
+- Change makefile behavior for test target to auto enable xdebug to check coverage
+
 ##[2.0.0] - 2020-01-14
 ###Stable Release
 
