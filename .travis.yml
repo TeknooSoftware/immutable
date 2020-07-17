@@ -8,6 +8,7 @@ php:
 matrix:
   include:
     - php: 7.4
+    - php: 7.4
       env: dependencies=lowest
 
 install:
@@ -17,5 +18,5 @@ before_script:
   - make
 
 script:
-    - make qa
-    - make test
+  - make qa
+  - make test
