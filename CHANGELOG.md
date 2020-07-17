@@ -1,5 +1,10 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[2.0.2] - 2020-07-17
+###Stable Release
+###Change
+- Add travis run also with lowest dependencies.
+
 ##[2.0.1] - 2020-03-01
 ###Stable Release
 ###Changes
