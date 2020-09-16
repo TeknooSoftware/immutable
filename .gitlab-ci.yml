@@ -1,0 +1,16 @@
+
+test:7.4-lower:
+  image: php:7.4
+  before_script:
+    - dependencies=lowest make
+  script:
+    - make qa
+    - make test
+
+test:7.4-uppaer:
+  image: php:7.4
+  before_script:
+    - make
+  script:
+    - make qa
+    - make test
