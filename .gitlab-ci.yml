@@ -10,7 +10,7 @@ test:7.4-lower:
 test:7.4-upper:
   image: php:7.4
   before_script:
-    - bash ci/docker_install.sh > /dev/null
+    - bash ci/before_script.sh > /dev/null
     - make
   script:
     - make qa
