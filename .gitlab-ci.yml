@@ -1,6 +1,6 @@
 before_script:
   - bash ci/before_script.sh > /dev/null
-  - composer=./composer.phar make
+  - make
 
 test:7.4-lower:
   image: php:7.4
