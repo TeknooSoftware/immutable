@@ -7,13 +7,14 @@ set -xe
 
 # Install git (the php image doesn't have it) which is required by composer
 apt-get update -yqq
-apt-get install git wget -yqq
+apt-get install git wget zlib1g-dev -yqq
 
 # Install zip
+apt-get install zlib1g-dev -yqq
 docker-php-ext-install zip
 
 # Install xdebug
-pecl install xdebug-2.8.1
+pecl install xdebug-2.8.1 -yqq
 docker-php-ext-enable xdebug
 
 #install composer
