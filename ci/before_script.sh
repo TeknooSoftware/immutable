@@ -9,6 +9,13 @@ set -xe
 apt-get update -yqq
 apt-get install git wget -yqq
 
+# Install zip
+docker-php-ext-install zip
+
+# Install xdebug
+pecl install xdebug-2.8.1
+docker-php-ext-enable xdebug
+
 #install composer
 wget https://composer.github.io/installer.sig -O - -q | tr -d '\n' > installer.sig
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
