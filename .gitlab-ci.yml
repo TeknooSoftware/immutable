@@ -17,7 +17,7 @@ test:7.4-upper:
     - make test
 
 test:8.0-lower:
-  image: php:8.0.0rc1
+  image: php:8.0.0rc1-buster
   script:
     - make qa
     - make test
@@ -25,7 +25,7 @@ test:8.0-lower:
     DEPENDENCIES: lowest
 
 test:8.0-upper:
-  image: php:8.0.0rc1
+  image: php:8.0.0rc1-buster
   script:
     - make qa
     - make test
