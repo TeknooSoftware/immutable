@@ -1,5 +1,9 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[2.0.6] - 2020-12-03
+###Stable Release
+- Official Support of PHP8
+
 ##[2.0.5] - 2020-10-12
 ###Stable Release
 - Prepare library to support also PHP8.
