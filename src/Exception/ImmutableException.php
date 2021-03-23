@@ -25,6 +25,8 @@ declare(strict_types=1);
 
 namespace Teknoo\Immutable\Exception;
 
+use LogicException;
+
 /**
  * Exception ImmutableException
  * thrown when an immutable object has been updated.
@@ -37,6 +39,6 @@ namespace Teknoo\Immutable\Exception;
  * @license     http://teknoo.software/license/mit         MIT License
  * @author      Richard Déloge <richarddeloge@gmail.com>
  */
-class ImmutableException extends \LogicException
+class ImmutableException extends LogicException
 {
 }
