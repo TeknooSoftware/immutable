@@ -74,8 +74,9 @@ class ImmutableTraitTest extends \PHPUnit\Framework\TestCase
 
         $this->expectException(ImmutableException::class);
 
-        $object = new class ('foo') implements ImmutableInterface {
-            use ImmutableTrait;
+        $code = <<<'EOF'
+        return new class ('foo') implements Teknoo\Immutable\ImmutableInterface {
+            use Teknoo\Immutable\ImmutableTrait;
 
             public function __construct(
                 private string $var,
@@ -89,6 +90,8 @@ class ImmutableTraitTest extends \PHPUnit\Framework\TestCase
             }
         };
 
+EOF;
+        $object = eval($code);
         self::assertEquals('foo', $object->getVar());
         $object->__construct('bar');
     }
