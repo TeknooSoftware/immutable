@@ -1,7 +1,6 @@
 Teknoo Software - Immutable library
 ===================================
 
-[![Build Status](https://travis-ci.com/TeknooSoftware/immutable.svg?branch=master)](https://travis-ci.com/TeknooSoftware/immutable)
 [![Latest Stable Version](https://poser.pugx.org/teknoo/immutable/v/stable)](https://packagist.org/packages/teknoo/immutable)
 [![Latest Unstable Version](https://poser.pugx.org/teknoo/immutable/v/unstable)](https://packagist.org/packages/teknoo/immutable)
 [![Total Downloads](https://poser.pugx.org/teknoo/immutable/downloads)](https://packagist.org/packages/teknoo/immutable)
