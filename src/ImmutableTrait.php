@@ -28,7 +28,6 @@ namespace Teknoo\Immutable;
 use Teknoo\Immutable\Exception\ImmutableException;
 
 /**
- * Trait ImmutableTrait
  * Default implementation of ImmutableInterface
  * Implement also a standard constructor to avoid multiple call of this method.
  *
@@ -44,8 +43,8 @@ trait ImmutableTrait
 {
     private bool $isConstructed = false;
 
-    /**
-     * Method to call in the constructor to avoid multiple call of '__construct'.
+    /*
+     * Method to call in your custom constructor to forbid multiple call of '__construct'.
      */
     protected function uniqueConstructorCheck(): ImmutableInterface
     {

@@ -1,5 +1,9 @@
 #Teknoo Software - Immutable library - Change Log
 
+##[2.0.9] - 2021-06-27
+###Stable Release
+- Update documents and dev libs requirements
+
 ##[2.0.8] - 2021-05-31
 ###Stable Release
 - Minor version about libs requirements

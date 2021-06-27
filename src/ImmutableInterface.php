@@ -44,7 +44,6 @@ interface ImmutableInterface
     /**
      * To forbid usage of __set.
      *
-     * @param string $name
      * @param mixed  $value
      * @return mixed
      *
@@ -54,8 +53,6 @@ interface ImmutableInterface
 
     /**
      * To forbid usage of __unset.
-     *
-     * @param string $name
      *
      * @throws ImmutableException
      */

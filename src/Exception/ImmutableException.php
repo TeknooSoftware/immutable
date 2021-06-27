@@ -28,7 +28,6 @@ namespace Teknoo\Immutable\Exception;
 use LogicException;
 
 /**
- * Exception ImmutableException
  * thrown when an immutable object has been updated.
  *
  * @copyright   Copyright (c) 2009-2021 EIRL Richard Déloge (richarddeloge@gmail.com)
