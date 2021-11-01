@@ -39,7 +39,7 @@
         "pdepend/pdepend": "~2.10",
         "sebastian/phpcpd": "^6.0.3",
         "phploc/phploc": "^7.0.2",
-        "phpstan/phpstan": "^0.12.99"
+        "phpstan/phpstan": "~1.0"
     },
     "minimum-stability": "stable",
     "autoload": {
