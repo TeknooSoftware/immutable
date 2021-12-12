@@ -1,5 +1,9 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [2.0.11] - 2021-12-12
+### Stable Release
+- Remove unused QA tool
+
 ## [2.0.10] - 2021-11-01
 ### Stable Release
 - Switch to PHPStan 1.0
