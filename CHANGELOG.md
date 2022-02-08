@@ -1,5 +1,10 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [3.0.0] - 2022-02-08
+### Stable Release
+- Require PHP 8.1 or later
+- Switch to readonly property to detect reconstructed object
+
 ## [2.0.12] - 2021-12-12
 ### Stable Release
 - Remove unused QA tool

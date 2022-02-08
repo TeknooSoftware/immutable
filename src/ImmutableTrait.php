@@ -25,6 +25,7 @@ declare(strict_types=1);
 
 namespace Teknoo\Immutable;
 
+use Error;
 use Teknoo\Immutable\Exception\ImmutableException;
 
 /**
@@ -41,18 +42,18 @@ use Teknoo\Immutable\Exception\ImmutableException;
  */
 trait ImmutableTrait
 {
-    private bool $isConstructed = false;
+    private readonly bool $isConstructed;
 
     /*
      * Method to call in your custom constructor to forbid multiple call of '__construct'.
      */
     protected function uniqueConstructorCheck(): ImmutableInterface
     {
-        if (true === $this->isConstructed) {
-            throw new ImmutableException('This object is immutable');
+        try {
+            $this->isConstructed = true;
+        } catch (Error $error) {
+            throw new ImmutableException('This object is immutable', 0, $error);
         }
-
-        $this->isConstructed = true;
 
         return $this;
     }
