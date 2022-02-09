@@ -52,7 +52,7 @@ To install this library with composer, run this command :
 
 This library requires :
 
-    * PHP 7.4+
+    * PHP 8.1+
 
 News from Teknoo Immutable 2.0
 ----------------------------
