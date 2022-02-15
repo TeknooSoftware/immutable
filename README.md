@@ -54,8 +54,15 @@ This library requires :
 
     * PHP 8.1+
 
+News from Teknoo Immutable 3.0
+------------------------------
+
+This library requires PHP 8.1 or newer. Some changes cause bc breaks :
+
+- Switch to readonly property to detect reconstructed object
+
 News from Teknoo Immutable 2.0
-----------------------------
+------------------------------
 
 This library requires PHP 7.4 or newer. Some changes cause bc breaks :
 
