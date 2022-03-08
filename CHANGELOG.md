@@ -1,5 +1,9 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [3.0.1] - 2022-03-08
+### Stable Release
+- `ImmutableTrait::__set` and `ImmutableTrait::__unset` are final
+
 ## [3.0.0] - 2022-02-08
 ### Stable Release
 - Require PHP 8.1 or later

@@ -47,7 +47,7 @@ trait ImmutableTrait
     /*
      * Method to call in your custom constructor to forbid multiple call of '__construct'.
      */
-    protected function uniqueConstructorCheck(): ImmutableInterface
+    final protected function uniqueConstructorCheck(): ImmutableInterface
     {
         try {
             $this->isConstructed = true;
@@ -63,12 +63,12 @@ trait ImmutableTrait
         $this->uniqueConstructorCheck();
     }
 
-    public function __set(string $name, $value)
+    final public function __set(string $name, $value)
     {
         throw new ImmutableException('This object is immutable');
     }
 
-    public function __unset(string $name)
+    final public function __unset(string $name)
     {
         throw new ImmutableException('This object is immutable');
     }
