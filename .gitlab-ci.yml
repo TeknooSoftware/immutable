@@ -17,4 +17,5 @@ test:8.1-upper:
   variables:
     PHP_VERSION: '8.1'
   script:
+    - make test
     - make qa
