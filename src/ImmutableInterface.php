@@ -44,12 +44,10 @@ interface ImmutableInterface
     /**
      * To forbid usage of __set.
      *
-     * @param mixed  $value
      * @return mixed
-     *
      * @throws ImmutableException
      */
-    public function __set(string $name, $value);
+    public function __set(string $name, mixed $value);
 
     /**
      * To forbid usage of __unset.

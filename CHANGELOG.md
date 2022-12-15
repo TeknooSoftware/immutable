@@ -1,5 +1,9 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [3.0.12] - 2022-12-19
+### Stable Release
+- Some QA fix
+
 ## [3.0.1] - 2022-03-08
 ### Stable Release
 - `ImmutableTrait::__set` and `ImmutableTrait::__unset` are final

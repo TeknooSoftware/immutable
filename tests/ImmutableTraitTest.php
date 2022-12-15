@@ -50,30 +50,26 @@ class ImmutableTraitTest extends \PHPUnit\Framework\TestCase
         };
     }
 
-    public function testSetException()
+    public function testSetException(): void
     {
         $this->expectException(ImmutableException::class);
         $this->buildImmutableInstance()->foo = 'bar';
     }
 
-    public function testUnsetException()
+    public function testUnsetException(): void
     {
         $this->expectException(ImmutableException::class);
         unset($this->buildImmutableInstance()->foo);
     }
 
-    public function testConstructor()
+    public function testConstructor(): void
     {
         $this->expectException(ImmutableException::class);
         $this->buildImmutableInstance()->__construct();
     }
 
-    public function testPHP8Constructor()
+    public function testPHP8Constructor(): void
     {
-        if (80000 > PHP_VERSION_ID) {
-            self::markTestSkipped('Only for PHP8+');
-        }
-
         $this->expectException(ImmutableException::class);
 
         $code = <<<'EOF'
