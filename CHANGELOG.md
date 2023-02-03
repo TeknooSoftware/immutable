@@ -1,5 +1,9 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [3.0.13] - 2023-02-03
+### Stable Release
+- Update dev libs to support PHPUnit 10 and remove unused phploc
+
 ## [3.0.12] - 2022-12-19
 ### Stable Release
 - Some QA fix
