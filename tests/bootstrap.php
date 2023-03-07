@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * Immutable.
  *
  * LICENSE
