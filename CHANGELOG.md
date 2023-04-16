@@ -1,5 +1,11 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [3.0.15] - 2023-04-16
+### Stable Release
+- Update dev lib requirements
+- Support PHPUnit 10.1+
+- Migrate phpunit.xml
+
 ## [3.0.14] - 2023-02-11
 ### Stable Release
 - Remove phpcpd and upgrade phpunit.xml
