@@ -39,39 +39,11 @@ Quick Example
 
 Support this project
 ---------------------
+This project is free and will remain free. It is fully supported by the activities of the EIRL.
+If you like it and help me maintain it and evolve it, don't hesitate to support me on
+[Patreon](https://patreon.com/teknoo_software) or [Github](https://github.com/sponsors/TeknooSoftware).
 
-This project is free and will remain free, but it is developed on my personal time. 
-If you like it and help me maintain it and evolve it, don't hesitate to support me on [Patreon](https://patreon.com/teknoo_software).
-Thanks :) Richard. 
-
-Installation & Requirements
----------------------------
-To install this library with composer, run this command :
-
-    composer require teknoo/immutable
-
-This library requires :
-
-    * PHP 8.1+
-
-News from Teknoo Immutable 3.0
-------------------------------
-
-This library requires PHP 8.1 or newer. Some changes cause bc breaks :
-
-- Switch to readonly property to detect reconstructed object
-
-News from Teknoo Immutable 2.0
-------------------------------
-
-This library requires PHP 7.4 or newer. Some changes cause bc breaks :
-
-- PHP 7.4 is the minimum required
-- Most methods have been updated to include type hints where applicable. Please check your extension points to make sure the function signatures are correct.
-- Switch to typed properties
-_ All files use strict typing. Please make sure to not rely on type coercion.
-- Remove some PHP useless DockBlocks
-- Enable PHPStan in QA Tools and disable PHPMd
+Thanks :) Richard.
 
 Credits
 -------
@@ -86,9 +58,35 @@ sharing knowledge and skills.
 
 License
 -------
-Immutable is licensed under the MIT License - see the licenses folder for details
+Space is licensed under the MIT License - see the licenses folder for details.
+
+Installation & Requirements
+---------------------------
+To install this library with composer, run this command :
+
+    composer require teknoo/immutable
+
+This library requires :
+
+    * PHP 8.1+
+
+News from Teknoo Immutable 3.0
+------------------------------
+This library requires PHP 8.1 or newer. Some changes cause bc breaks :
+
+- Switch to readonly property to detect reconstructed object
+
+News from Teknoo Immutable 2.0
+------------------------------
+This library requires PHP 7.4 or newer. Some changes cause bc breaks :
+
+- PHP 7.4 is the minimum required
+- Most methods have been updated to include type hints where applicable. Please check your extension points to make sure the function signatures are correct.
+- Switch to typed properties
+_ All files use strict typing. Please make sure to not rely on type coercion.
+- Remove some PHP useless DockBlocks
+- Enable PHPStan in QA Tools and disable PHPMd
 
 Contribute :)
 -------------
-
 You are welcome to contribute to this project. [Fork it on Github](CONTRIBUTING.md)
