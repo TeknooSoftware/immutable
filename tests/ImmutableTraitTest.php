@@ -42,7 +42,7 @@ class ImmutableTraitTest extends \PHPUnit\Framework\TestCase
 {
     public function buildImmutableInstance()
     {
-        return new class implements ImmutableInterface {
+        return new class () implements ImmutableInterface {
             use ImmutableTrait;
         };
     }
