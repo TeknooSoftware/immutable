@@ -25,6 +25,7 @@ declare(strict_types=1);
 
 namespace Teknoo\Tests\Immutable;
 
+use PHPUnit\Framework\Attributes\CoversTrait;
 use Teknoo\Immutable\Exception\ImmutableException;
 use Teknoo\Immutable\ImmutableInterface;
 use Teknoo\Immutable\ImmutableTrait;
@@ -35,9 +36,8 @@ use Teknoo\Immutable\ImmutableTrait;
  * @copyright   Copyright (c) SASU Teknoo Software (https://teknoo.software - contact@teknoo.software)
  * @license     http://teknoo.software/license/mit         MIT License
  * @author      Richard Déloge <richard@teknoo.software>
- *
- * @covers \Teknoo\Immutable\ImmutableTrait
  */
+#[CoversTrait(ImmutableTrait::class)]
 class ImmutableTraitTest extends \PHPUnit\Framework\TestCase
 {
     public function buildImmutableInstance()
