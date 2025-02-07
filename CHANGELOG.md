@@ -1,5 +1,11 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [3.0.19] - 2025-02-07
+### Stable Release
+- Update dev lib requirements
+  - Require Symfony libraries 6.4 or 7.2
+  - Update to PHPUnit 12
+
 ## [3.0.18] - 2024-10-06
 ### Stable Release
 - Update dev lib requirements
