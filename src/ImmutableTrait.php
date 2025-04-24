@@ -25,7 +25,7 @@ declare(strict_types=1);
 
 namespace Teknoo\Immutable;
 
-use Error;
+use Throwable;
 use Teknoo\Immutable\Exception\ImmutableException;
 
 /**
@@ -48,7 +48,7 @@ trait ImmutableTrait
     {
         try {
             $this->isConstructed = true;
-        } catch (Error $error) {
+        } catch (Throwable $error) {
             throw new ImmutableException('This object is immutable', 0, $error);
         }
 
@@ -60,7 +60,7 @@ trait ImmutableTrait
         $this->uniqueConstructorCheck();
     }
 
-    final public function __set(string $name, $value)
+    final public function __set(string $name, mixed $value)
     {
         throw new ImmutableException('This object is immutable');
     }

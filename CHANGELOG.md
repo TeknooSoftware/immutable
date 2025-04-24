@@ -1,5 +1,10 @@
 # Teknoo Software - Immutable library - Change Log
 
+## [3.0.20] - 2025-04-24
+### Stable Release
+- Update to PHPStan 2
+- Require PHP 8.3
+
 ## [3.0.19] - 2025-02-07
 ### Stable Release
 - Update dev lib requirements

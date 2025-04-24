@@ -1,0 +1,8 @@
+parameters:
+    ignoreErrors:
+        -
+            message: '#is assigned outside of the constructor#'
+            path:  src/
+        -
+            message: '#Throwable is never thrown in the try block.#'
+            path:  src/
