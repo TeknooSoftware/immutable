@@ -39,7 +39,7 @@ use Teknoo\Immutable\ImmutableTrait;
  */
 class ImmutableTraitTest extends TestCase
 {
-    public function buildImmutableInstance()
+    public function buildImmutableInstance(): ImmutableInterface
     {
         return new class () implements ImmutableInterface {
             use ImmutableTrait;
@@ -86,7 +86,7 @@ class ImmutableTraitTest extends TestCase
 
 EOF;
         $object = eval($code);
-        self::assertEquals('foo', $object->getVar());
+        $this->assertEquals('foo', $object->getVar());
         $object->__construct('bar');
     }
 }
