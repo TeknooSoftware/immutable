@@ -58,7 +58,7 @@ sharing knowledge and skills.
 
 License
 -------
-Immutable is licensed under the MIT License - see the licenses folder for details.
+Immutable is licensed under the 3-Clause BSD License - see the licenses folder for details.
 
 Installation & Requirements
 ---------------------------

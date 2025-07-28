@@ -3,6 +3,7 @@
 ## [3.0.21] - 2025-07-26
 ### Stable Release
 - Update dev libraries requirements
+- Switch license from MIT to 3-Clause BSD
 
 ## [3.0.20] - 2025-04-24
 ### Stable Release

@@ -4,7 +4,7 @@
     "description": "Library to create PHP immutable object",
     "keywords": ["immutable", "object"],
     "homepage": "http://teknoo.software/immutable",
-    "license": ["MIT"],
+    "license": ["BSD-3-Clause"],
     "authors": [
         {
             "name": "Richard Déloge",
