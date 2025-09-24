@@ -1,4 +1,8 @@
 parameters:
+    level: max
+    paths:
+        - src/
+        - tests/Support/
     ignoreErrors:
         -
             message: '#is assigned outside of the constructor#'

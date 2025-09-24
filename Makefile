@@ -31,7 +31,7 @@ phploc:
 	${PHP} vendor/bin/phploc src
 
 phpstan:
-	${PHP} vendor/bin/phpstan analyse src tests/Support --level max
+	${PHP} vendor/bin/phpstan analyse
 
 phpcs:
 	${PHP} vendor/bin/phpcs --standard=PSR12 --extensions=php src/
