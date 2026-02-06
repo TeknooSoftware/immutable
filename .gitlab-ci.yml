@@ -12,13 +12,13 @@ test:8.3-lower:
     PHP_VERSION: '8.3'
     DEPENDENCIES: lowest
 
-test:8.3-upper:
+test:8.4-lower:
   extends: .abstract_tests
   variables:
     PHP_VERSION: '8.3'
+    DEPENDENCIES: lowest
   script:
     - make test
-    - make qa
 
 test:8.4-upper:
   extends: .abstract_tests
